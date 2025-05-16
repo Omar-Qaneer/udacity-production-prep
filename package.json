@@ -1,0 +1,17 @@
+{
+  "name": "udacity-production-prep",
+  "version": "1.0.0",
+  "description": "A flashcard web app optimized for production with testing (Mocha, Cypress), automation (Gulp), and bundling (Parcel) as part of the Udacity front-end project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omar Qaneer",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0"
+  }
+}
