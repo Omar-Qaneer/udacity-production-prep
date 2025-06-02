@@ -18,8 +18,10 @@ const createElement = (elementType, text) => {
 //Creates images with alt
 const createImage = (url, alt) => {
   var img = document.createElement('img');
+  //img.src = typeof url === "string" ? url : String(url); // Defensive fix
   img.src = url;
-  img.alt == alt;
+  //img.src = "../images/homePage.png";
+  img.alt = alt;
   return img
 }
 

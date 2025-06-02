@@ -25,7 +25,9 @@ const renderHomePage = () => {
   );
 
   //Creates elements
-  const image = createImage(homePageImage, "Desk of laptops");
+  const image = createImage(homePageImage , "Desk of laptops");
+  console.log("homePageImage:", homePageImage);
+
 
   //Container for elements
   const homeContainer = document.createElement("div");

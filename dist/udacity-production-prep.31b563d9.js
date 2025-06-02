@@ -985,8 +985,10 @@ const createElement = (elementType, text)=>{
 //Creates images with alt
 const createImage = (url, alt)=>{
     var img = document.createElement('img');
+    //img.src = typeof url === "string" ? url : String(url); // Defensive fix
     img.src = url;
-    img.alt;
+    //img.src = "../images/homePage.png";
+    img.alt = alt;
     return img;
 };
 // Create a header element with specified text and data attribute
@@ -1172,6 +1174,7 @@ const renderHomePage = ()=>{
     const subHeading = (0, _utilityRenderFunctionsJs.createElement)("h2", "A Digital Study Solution for the Modern World");
     //Creates elements
     const image = (0, _utilityRenderFunctionsJs.createImage)((0, _homePagePngDefault.default), "Desk of laptops");
+    console.log("homePageImage:", (0, _homePagePngDefault.default));
     //Container for elements
     const homeContainer = document.createElement("div");
     homeContainer.className = "homeContainer";
@@ -1179,6 +1182,6 @@ const renderHomePage = ()=>{
     main.append(homeContainer);
 };
 
-},{"../images/homePage.png":"4K0cp","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4K0cp":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire536f", {})
+},{"./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../images/homePage.png":"4K0cp"}],"4K0cp":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire536f", {})
 
 //# sourceMappingURL=udacity-production-prep.31b563d9.js.map
